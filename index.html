@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>Delwyn's CSS Essential Training</title>
 </head>
@@ -12,132 +13,150 @@
   <div id="container">
     <main>
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
-      <header>
-        <p>
-          <a href="http://jigsaw.w3.org/css-validator/check/referer">
-            <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-              alt="Valid CSS!" />
-          </a>
-        </p>
-        <h1 id="name">Delwyn LaCour</h1>
-        <h2 class="cool">Web Developer, Designer and Programmer</h2>
 
-        <p>I am an up and coming Web Developer, Designer, and Programmer. I have a little more than a year of designing
-          experience under my belt. Yet in my short time as a developer I have learned so much that I was once ignorant
-          to. Designing web pages and sites has become an enjoyment of mine. The feeling of accomplishment post design
-          is uncompareable.</p>
+      <header>
+        <div class="content-wrap">
+          <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+              <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!"  />
+            </a>
+          </p>
+          <h1 id="name">Delwyn LaCour</h1>
+          <h2 class="cool">Web Developer, Designer and Programmer</h2>
+
+          <p>I am an up and coming Web Developer, Designer, and Programmer. I have a little more than a year of
+            designing
+            experience under my belt. Yet in my short time as a developer I have learned so much that I was once
+            ignorant
+            to. Designing web pages and sites has become an enjoyment of mine. The feeling of accomplishment post design
+            is uncompareable.</p>
+        </div>
       </header>
 
       <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
       <section class="projects">
-        <h2 class="cooler">Featured Projects</h2>
-        <p>View selected projects below. More information can be found at <a
-            href="https://delwyn948400511.wordpress.com/">Delwyn's Programs, Designs and Developments</a>.</p>
+        <div class="content-wrap">
+          <h2 class="cooler" >Featured Projects</h2>
+          <p class="coolerKid">View selected projects below. More information can be found at <a class="coolerKidKid"
+              href="https://delwyn948400511.wordpress.com/">Delwyn's Programs, Designs and Developments</a>.</p>
 
-        <!-- Copy the whole <section> block to add more projects. -->
-        <section>
-          <h3>Vicious Cycles</h3>
-          <img src="vicious-image.jpg" alt="picture of a blue motorcycle">
-          <p>This is a project I created and completed in my first web design class. For this project a website for
-            Vicious Cycles was created.</p>
-          <a href="http://wcet3.waketech.edu/ddlacour/WEB140/Project1/vicious.html" target="_parent">View project / case
-            study</a>
-        </section>
-        <!-- End of Project block. -->
-        <section>
-          <h3>The Biltmore Guide</h3>
-          <img src="BestBiltmorePicture.jpg" alt="Picture of the Biltmore House">
-          <p>This is a website I created to guide visitors around The Biltmore Estate. With this app a user would be
-            able to mark the most popular locations at The Biltmore Estate.</p>
-          <a href="http://wcet3.waketech.edu/ddlacour/WEB125/Lesson10Assignment/index.html" target="_parent">View
-            project / case study</a>
-        </section>
+          <!-- Copy the whole <section> block to add more projects. -->
+          <section class="project-item">
+            <img src="vicious-image.jpg" alt="picture of a blue motorcycle">
+            <!--placing the image tag before the h3 tag allows the image to float
+            left and everything follow after -->
+            <h3>Vicious Cycles</h3>
+            <p>This is a project I created and completed in my first web design class. For this project a website for
+              Vicious Cycles was created.</p>
+            <a href="http://wcet3.waketech.edu/ddlacour/WEB140/Project1/vicious.html" target="_parent">View project /
+              case
+              study</a>
+          </section>
+          <!-- End of Project block. -->
+          <section class="project-item">
+            <img src="BestBiltmorePicture.jpg" alt="Picture of the Biltmore House">
+            <h3>Biltmore Guide</h3>
+            <p>This is a website I created to guide visitors around The Biltmore Estate. With this app a user would be
+              able to mark the most popular locations at The Biltmore Estate.</p>
+            <a href="http://wcet3.waketech.edu/ddlacour/WEB125/Lesson10Assignment/index.html" target="_parent">View
+              project / case study</a>
+          </section>
 
-        <section>
-          <h3>Tournacard</h3>
-          <img src="poker.jpg" alt="picture of playing cards and poker chips">
-          <p>I created this website so that avid card players could find nearby locations to join card tournaments.
-            Once I created this site, I used PhoneGap Build to convert the site into an app.</p>
-          <a href="http://wcet3.waketech.edu/ddlacour/WEB125/LaCourFinal/index.html" target="_parent">View project /
-            case study</a>
-        </section>
+          <section class="project-item">
+            <img src="poker.jpg" alt="picture of playing cards and poker chips">
+            <h3>Tournacard</h3>
+            <p>I created this website so that avid card players could find nearby locations to join card tournaments.
+              Once I created this site, I used PhoneGap Build to convert the site into an app.</p>
+            <a href="http://wcet3.waketech.edu/ddlacour/WEB125/LaCourFinal/index.html" target="_parent">View project /
+              case study</a>
+          </section>
 
-        <section>
-          <h3>Project Name</h3>
-          <img src="annie-spratt-unsplash.jpg" alt="art of water painted flowers">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-          <a href="#" target="_blank">View project / case study</a>
-        </section>
+          <section class="project-item">
+            <img src="annie-spratt-unsplash.jpg" alt="art of water painted flowers">
+            <h3>Project Name</h3>
+            <p>Lorem ipsum dolor sit amet, the word after this is so long I had
+              to write my own sentence just to get my content aligned correctly consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <a href="#" target="_blank">View project / case study</a>
+          </section>
 
-        <section>
-          <h3>Project Name</h3>
-          <img src="joanna-kosinska-unsplash.jpg" alt="two pencils on a yellow background">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-            ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-          <a href="#" target="_blank">View project / case study</a>
-        </section>
+          <section class="project-item">
+            <img src="joanna-kosinska-unsplash.jpg" alt="two pencils on a yellow background">
+            <h3>Project Name</h3>
+            <p>Lorem ipsum dolor sit amet, the word after this is so long I had
+              to write my own sentence just to get my content aligned correctly consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa.
+              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+            <a href="#" target="_blank">View project / case study</a>
+          </section>
+        </div>
       </section>
 
       <!-- ***********************  WORK EXPERIENCE  *********************** -->
       <section class="work-experience">
-        <h2>Work Experience</h2>
-        
+        <div class="content-wrap">
+          <h2>Work Experience</h2>
 
-        <!-- Copy this whole <section> block to add more jobs. -->
-        <section class="oneTime">
-          <h3>Bookkeeper</h3>
-          <p>CPA CloudRollers</p>
-          <p>2014 - Present</p>
-          <p>Keep client books updated regularly. Manage client accounts effectively and efficiently.</p>
-        </section>
-        <section class="oneTime">
-          <h3>Team Lead</h3>
-          <p>World Class Distribution</p>
-          <p>2012 - 2014</p>
-          <p>Supervise the completion of tasks. Train employees in proper workplace safety.</p>
-        </section>
-        <section class="oneTime">
-          <h3>Marketing & Sales</h3>
-          <p>North Dallas Gazette</p>
-          <p>2012 - 2014</p>
-          <p>Sold available ad space in the North Dallas Gazette to businesses.</p>
-        </section>
-        <!-- End of Job block. -->
+
+          <!-- Copy this whole <section> block to add more jobs. -->
+          <section class="oneTime">
+            <h3>Bookkeeper</h3>
+            <p>CPA CloudRollers</p>
+            <p>2014 - Present</p>
+            <p>Keep client books updated regularly. Manage client accounts effectively and efficiently.</p>
+          </section>
+          <section class="oneTime">
+            <h3>Team Lead</h3>
+            <p>World Class Distribution</p>
+            <p>2012 - 2014</p>
+            <p>Supervise the completion of tasks. Train employees in proper workplace safety.</p>
+          </section>
+          <section class="oneTime">
+            <h3>Marketing & Sales</h3>
+            <p>North Dallas Gazette</p>
+            <p>2012 - 2014</p>
+            <p>Sold available ad space in the North Dallas Gazette to businesses.</p>
+          </section>
+          <!-- End of Job block. -->
+        </div>
       </section>
 
       <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
       <section class="education">
-        <h2>Education</h2>
+        <div class="content-wrap">
+          <h2>Education</h2>
 
-        <!-- Copy this whole <section> block to add more schools. -->
-        <section>
-          <h3>Wake Technical Community College - Raleigh,NC</h3>
-          <p>AAS General Business, 2017 - 2019</p>
-          <p>Summary or accomplishments.</p>
-        </section>
-        <section>
-          <h3>Wake Technical Community College - Raleigh,NC</h3>
-          <p>AAS Mobile App Development, 2019 - 2021</p>
-          <p>Summary or accomplishments.</p>
-        </section>
-        <!-- End of School block. -->
+          <!-- Copy this whole <section> block to add more schools. -->
+          <section>
+            <h3>Wake Technical Community College - Raleigh,NC</h3>
+            <p>AAS General Business, 2017 - 2019</p>
+            <p>Summary or accomplishments.</p>
+          </section>
+          <section>
+            <h3>Wake Technical Community College - Raleigh,NC</h3>
+            <p>AAS Mobile App Development, 2019 - 2021</p>
+            <p>Summary or accomplishments.</p>
+          </section>
+          <!-- End of School block. -->
+        </div>
       </section>
 
       <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
       <footer>
-        <h2>Let's Keep in Touch!</h2>
+        <div class="content-wrap">
+          <h2>Let's Keep in Touch!</h2>
 
-        <!-- Social media and contact links. Add or remove any networks. -->
-        <ul>
-          <li><a href="mailto:ddlacour@my.waketech.edu">Email</a></li>
-          <li><a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a></li>
-          <li><a href="#" target="_blank">Twitter</a></li>
-          <li><a href="#" target="_blank">LinkedIn</a></li>
-          <li><a href="#" target="_blank">Facebook</a></li>
-        </ul>
+          <!-- Social media and contact links. Add or remove any networks. -->
+          <ul>
+            <li><a href="mailto:ddlacour@my.waketech.edu">Email</a></li>
+            <li><a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a></li>
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+            <li><a href="#" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
       </footer>
     </main>
   </div>

@@ -1,14 +1,54 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+    /*the two selectors above(html{box-sizing and *:before, *:after{,  create "The Box Model Fix". Also note that auto-complete attempts to 
+    input two colons in front of before and after. ALWAYS ADD!!*/
+}
 body{
     color: #343434;
-    width: 80%;
+    width: 95%;
     margin-right: auto;
     margin-left: auto;
     background: gray;
     text-align: left;
-    font-size: 20pt;
+    font-size: 20px;
+    /*added line-heigh to create space between lines*/
+    line-height: 1.5;
+    /*Below google fonts were used through a link embedded in the html file*/
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+}
+h1{
+    font-size: 100px;
+    line-height: 1;/*overrides inherited line-height from body selector */
+}
+h2{
+    font-size: 50px;
+    
+    
+}
+h1, h2{
+    /*apply google fonts to h1 and h2 elements*/
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+    /*the above margin property prevents any margin space between elements*/
+}
+h3{
+    font-size: 30px;
+}
+
+.content-wrap{
+    width: 80%;
+    /* the property below correctly aligns the content */
+    margin: 0 auto;
+    padding: 60px 0;
 }
 a{
     color: #FFE66D;
+    display: inline-block;
     
 }
 a:link{
@@ -41,11 +81,13 @@ header{
     text-align: center;
 }
 #name{
-    font-size: 30pt;
+    text-shadow: 4px 4px;
+    /*This is an Id for the first h1 element*/
+    
 }
 img{
-    width: 50%;
-    height: auto;
+    width: 150px;
+    height: 150px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -80,8 +122,9 @@ a:active{
 }
 styles for link using pseudo selectors*/
 .projects{
-    background: purple;
-    text-align: center;
+    background: royalblue;
+    text-align: left;
+   
     
 
 
@@ -93,6 +136,7 @@ styles for link using pseudo selectors*/
     padding: 2px;
     border-radius: 8px;
     text-decoration: none;
+    
 }
 .projects a:link{
     background: gold;
@@ -110,15 +154,33 @@ styles for link using pseudo selectors*/
     opacity: 80%;
 }
 .projects a:active{
-    background: black;
-    
+    background: black;  
+}
+.project-item{
+    overflow: hidden;
+    border-bottom: 1px dashed darkgrey ;
+    padding: 20px 0;
+    /*use of the overflow property cleared the float which
+    otherwised would have staggered the text incorrectly*/
+}
+.project-item img{
+    float: left;
+    /*the above selector and properties float the image
+    to the left of the content*/
+    margin-right: 20px;
+    /*the above property adds more space between the image and text*/
+}
+.project-item h3 {
+    margin-top: 0;
+    /*the above selector and property aligns the h3 of
+    each project with its relevant image*/
 }
 .work-experience{
-    background: #A1C6D7;
+    background: aqua;
     text-align: center;
 }
 .education{
-    background: green;
+    background: skyblue;
     text-align: center; 
 
 }
@@ -127,6 +189,21 @@ footer{
     color: #F7FFF7;
     text-align: center;
 }
+.cooler{
+    text-align: center;
+    font-size: 70px;
+}
+.coolerKid{
+    text-align: center;
+    font-size: 30px;
+
+}
+.coolerKidKid{
+    text-align: center;
+    font-size: 25px;
+
+}
+
 
 
 
